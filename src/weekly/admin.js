@@ -1,11 +1,8 @@
-// --- Global Data Store ---
 let weeks = [];
 
-// --- Element Selections ---
 const weekForm  = document.getElementById('week-form');
 const weekTbody = document.getElementById('weeks-tbody');
 
-// --- Functions ---
 
 function createWeekRow(week) {
   const tr = document.createElement('tr');
@@ -116,5 +113,4 @@ async function loadAndInitialize() {
   weekTbody.addEventListener('click', handleTableClick);
 }
 
-// --- Initial Page Load ---
 loadAndInitialize();
