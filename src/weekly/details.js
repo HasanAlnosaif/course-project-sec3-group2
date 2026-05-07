@@ -1,8 +1,6 @@
-// --- Global Data Store ---
 let currentWeekId   = null;
 let currentComments = [];
 
-// --- Element Selections ---
 const weekTitle       = document.getElementById('week-title');
 const weekStartDate   = document.getElementById('week-start-date');
 const weekDescription = document.getElementById('week-description');
@@ -11,7 +9,6 @@ const commentList     = document.getElementById('comment-list');
 const commentForm     = document.getElementById('comment-form');
 const newCommentInput = document.getElementById('new-comment');
 
-// --- Functions ---
 
 function getWeekIdFromURL() {
   const params = new URLSearchParams(window.location.search);
@@ -101,5 +98,4 @@ async function initializePage() {
   }
 }
 
-// --- Initial Page Load ---
 initializePage();
